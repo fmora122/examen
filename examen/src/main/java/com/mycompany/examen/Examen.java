@@ -11,6 +11,12 @@ package com.mycompany.examen;
 public class Examen {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        receipt receipt1[] = new receipt[20];
+        loadData loader = new loadData();        
+        receipt1 = loader.load(receipt1);
+        receipt1 = loader.addNew(receipt1);
+        
+        
+        
     }
 }
