@@ -15,7 +15,7 @@ public class receipt {
     private String participant3;
     private String participant4;
     private String participant5;
-    private String participant6;    
+    private String participant6; 
     private String whoPaid;
     private int total;
     private String currency;

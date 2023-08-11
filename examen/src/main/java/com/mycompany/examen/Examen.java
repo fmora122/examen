@@ -11,10 +11,18 @@ package com.mycompany.examen;
 public class Examen {
 
     public static void main(String[] args) {
+        
+        
+        // PARA CARGAR DATOS INICIALES
         receipt receipt1[] = new receipt[20];
-        loadData loader = new loadData();        
+        loadData loader = new loadData();
         receipt1 = loader.load(receipt1);
-        receipt1 = loader.addNew(receipt1);
+        
+        // PROBANDO AGREGAR NUEVA FACTURA
+        //receipt1 = loader.addNew(receipt1);
+        
+        // PROBANDO LA CALCU
+        receipt1 = loader.calc(receipt1);
         
         
         
