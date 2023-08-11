@@ -49,13 +49,9 @@ public class loadData {
         //String name = "Guillermo";
         int sum;
         for (int i  = 0; i <= newSize; i++) {
-            
-            sum = 0;
-            /*
-            NO ENTIENDO PORQUE EN LA LINEA #58 SI PONGO VARIABLE "name" NO FUNCIONA, 
-            PERO SI PONGO "Guillermo", SI FUNCIONA
-            */
-            if(receipt[i].getWhoPaid() == "Guillermo" ) {
+            int result = name.compareTo(receipt[i].getWhoPaid());
+            sum = 0;           
+            if(result == 0 ) {
                 System.out.println("***************************");
                 System.out.println("Debt list of "+name);
                 System.out.println("Description: "+receipt[i].getDescription());
