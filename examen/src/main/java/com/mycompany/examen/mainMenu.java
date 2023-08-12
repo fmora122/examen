@@ -89,7 +89,9 @@ public class mainMenu {
    }    
     class analyticsActionListener implements ActionListener{
       public void actionPerformed(ActionEvent e) {
-          //new analyticsMenu();
+          receipt receipt[] = new receipt[20];
+          receipt = data.getSourceReceipt();
+          receipt = loader.calc(receipt);
       }
    }
 }
