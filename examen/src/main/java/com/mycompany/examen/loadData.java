@@ -12,9 +12,16 @@ import javax.swing.JOptionPane;
  */
 public class loadData {
     private int size = 7;
-    private int newSize = 7;
+    private int newSize = 0;
     
-    public static receipt[] load(receipt receipt[]){
+
+    public loadData() {
+        
+    }
+    
+    
+    
+    public receipt[] load(receipt receipt[]){
         receipt[0] = new receipt("DesayunocoffePrime", "Joshua", "Greivin", "Guillermo", "Andres", "Tavo", "David", "Guillermo", 120, "dollar");
         receipt[1] = new receipt("Almuerzo PigFactory", "Joshua", "Greivin", "Guillermo", "Andres", "Tavo", "NA", "Guillermo", 200, "dollar");
         receipt[2] = new receipt("Cena FastFood", "Joshua", "David", "NA", "NA", "NA", "NA", "David", 50, "dollar");
@@ -28,7 +35,7 @@ public class loadData {
     }
     
     public receipt[] addNew(receipt receipt[]){
-        newSize = size++;
+        newSize = size + 1;
         String description = JOptionPane.showInputDialog("Type Description");
         String participant1 = JOptionPane.showInputDialog("Type Participant1");
         String participant2 = JOptionPane.showInputDialog("Type Participant2");
@@ -50,7 +57,7 @@ public class loadData {
         int sum;
         for (int i  = 0; i <= newSize; i++) {
             int result = name.compareTo(receipt[i].getWhoPaid());
-            sum = 0;           
+            sum = 0;
             if(result == 0 ) {
                 System.out.println("***************************");
                 System.out.println("Debt list of "+name);

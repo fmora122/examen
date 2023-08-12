@@ -14,15 +14,16 @@ public class Examen {
         
         
         // PARA CARGAR DATOS INICIALES
-        receipt receipt1[] = new receipt[20];
-        loadData loader = new loadData();
-        receipt1 = loader.load(receipt1);
+        //receipt receipt1[] = new receipt[20];
+        //loadData loader = new loadData();
+        //receipt1 = loader.load(receipt1);
         
         // PROBANDO AGREGAR NUEVA FACTURA
         //receipt1 = loader.addNew(receipt1);
         
         // PROBANDO LA CALCU
-        receipt1 = loader.calc(receipt1);
+        //receipt1 = loader.calc(receipt1);
+        mainMenu menu = new mainMenu();
         
         
         
